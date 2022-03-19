@@ -1,0 +1,17 @@
+const int led1 = 2;
+const int bot1 = 3;
+  
+void setup()
+{
+  pinMode(led1, OUTPUT);
+  pinMode(bot1, INPUT);
+}
+
+void loop()
+{
+  if(digitalRead(bot1) == HIGH){
+    digitalWrite(led1, HIGH);
+  }else{
+    digitalWrite(led1, LOW);
+  }
+}
